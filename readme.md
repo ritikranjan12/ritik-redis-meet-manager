@@ -5,9 +5,13 @@
 
 Welcome to **Ritik's Redis & Meet Manager**! This project is a command-line tool designed to help you manage Redis servers, join Google Meet sessions, open VS Code projects, and more, all from a single interface.
 
+## For Developers
+
+This project is designed for developers to reduce their repetitive tasks, such as starting Redis in Windows WSL and opening projects by navigating to folders repeatedly.
+
 ## Features
 
-- **Change Node.js Version**: Easily switch between different Node.js versions.
+- **Change Node.js Version**: Easily switch between different Node.js versions (Coming Soon).
 - **Start/Stop Redis Server**: Manage your Redis server with simple commands.
 - **Join Google Meet**: Quickly join predefined Google Meet sessions.
 - **Open Telegram**: Open Telegram or a specific chat directly from the command line.
@@ -29,7 +33,11 @@ Welcome to **Ritik's Redis & Meet Manager**! This project is a command-line tool
     go mod tidy
     ```
 
-3. **Build the executable**:
+3. **Set Configuration**:
+    - **VS Code Projects**: Update the `projects` variable in `main.go` with your project paths and commands.
+    - **Google Meet Links**: Update the `misikiMeetLink` and `sparkinityMeetLink` constants with your Google Meet URLs.
+
+4. **Build the executable**:
     ```sh
     go build -o ritik_redis_manager_v3.0.0.exe
     ```
@@ -42,11 +50,6 @@ Run the executable to start the command-line interface:
 ```
 
 Follow the on-screen instructions to navigate through the menu and use the various features.
-
-### Configuration
-
-- **VS Code Projects**: Update the `projects` variable in `main.go` with your project paths and commands.
-- **Google Meet Links**: Update the `misikiMeetLink` and `sparkinityMeetLink` constants with your Google Meet URLs.
 
 ### Example
 
@@ -61,7 +64,7 @@ Here's an example of how to use the tool:
 
     📌 **Main Menu**:
     ```
-    [1] 💻 Change Node.js Version
+    [1] 💻 Change Node.js Version (Coming Soon)
     [2] 🔴 Start Redis Server
     [3] 🟢 Stop Redis Server
     [4] 📞 Join Google Meet 1
@@ -76,6 +79,10 @@ Here's an example of how to use the tool:
     ```
 
 Follow the prompts to complete your task.
+
+## Future Enhancements
+
+I am actively working on this project to make it more streamlined with a lot of features coming in the future.
 
 ## License
 
